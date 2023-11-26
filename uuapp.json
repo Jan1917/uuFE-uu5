@@ -1,0 +1,17 @@
+{
+  "product": "uu_f_e",
+  "version": "0.1.0",
+  "license": "License Commercial",
+  "description": {
+    "en": "",
+    "cs": ""
+  },
+  "devkit": {
+    "development": {
+      "appBoxLocationUri": "----- VALUE REQUIRED -----",
+      "appDeploymentUri": null
+    }
+  },
+  "uu_f_e-hi": {},
+  "uu_f_e-server": {}
+}
