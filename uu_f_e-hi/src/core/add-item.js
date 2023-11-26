@@ -2,13 +2,13 @@ import { useState } from "uu5g05";
 import Uu5Elements from "uu5g05-elements";
 import Uu5Forms from "uu5g05-forms";
 
-function AddBook(props) {
+function AddItem(props) {
   const [name, setName] = useState();
-  const [author, setAuthor] = useState();
+  const [price, setPrice] = useState();
 
   return (
     <Uu5Elements.ListItem
-      actionList={[{ icon: "uugds-plus", onClick: () => name && author && props.onAdd({ name, author }) }]}
+      actionList={[{ icon: "uugds-plus", onClick: () => name && price && props.onAdd({ name, price }) }]}
     >
       <Uu5Forms.Text.Input
         value={name}
@@ -17,13 +17,13 @@ function AddBook(props) {
         significance="subdued"
       />
       <Uu5Forms.Text.Input
-        value={author}
-        onChange={(e) => setAuthor(e.data.value)}
-        placeholder="Author"
+        value={price}
+        onChange={(e) => setPrice(e.data.value)}
+        placeholder="Price"
         significance="subdued"
       />
     </Uu5Elements.ListItem>
   );
 }
 
-export default AddBook;
+export default AddItem;

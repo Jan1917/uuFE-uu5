@@ -9,7 +9,7 @@ import WelcomeRow from "../bricks/welcome-row.js";
 import RouteBar from "../core/route-bar.js";
 import importLsi from "../lsi/import-lsi.js";
 
-import Library from "../core/library";
+import ListOfItems from "../core/list-of-items.js";
 //@@viewOff:imports
 
 //@@viewOn:constants
@@ -52,7 +52,7 @@ let Home = createVisualComponent({
     const attrs = Utils.VisualComponent.getAttrs(props, Css.main());
     return (
       <div {...attrs}>
-        <Library />
+        <ListOfItems />
       </div>
     );
     //@@viewOff:render
